@@ -25,7 +25,7 @@ void UGDAttributeSetBase::PreAttributeChange(const FGameplayAttribute& Attribute
 	// If a Max value changes, adjust current to keep Current % of Current to Max
 	if (Attribute == GetMaxHealthAttribute()) // GetMaxHealthAttribute comes from the Macros defined at the top of the header
 	{
-		AdjustAttributeForMaxChange(Health, MaxHealth, NewValue, GetHealthAttribute());
+		//AdjustAttributeForMaxChange(Health, MaxHealth, NewValue, GetHealthAttribute());
 	}
 	else if (Attribute == GetMaxManaAttribute())
 	{
